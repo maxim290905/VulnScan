@@ -1,6 +1,6 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello, World! SMTH" << std::endl;
+    std::cout << "XSS" << std::endl;
     return 0;
 }
