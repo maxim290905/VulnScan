@@ -1,5 +1,6 @@
 
 #include "include/menu.h"
+#include "pch.h"
 
 // Очищает экран консоли (с помощью полной перезагрузки терминала)
 void clear_console() {
@@ -56,12 +57,30 @@ void print_banner() {
 }
 
 // Печатает главное меню с баннером и опциями
-void print_start_menu() {
+void print_menu() {
     clear_console();
     print_banner();
+}
+
+std::string input_target_url() {
+    std::string url;
     static const char* inform = R"(
 Welcome to VulnScan!
-Enter URL:
-)";
+Enter URL: )";
     std::cout << inform;
+    std::cin >> url;
+    return url;
+}
+
+int input_menu_option() {
+    int option;
+    std::cout << "Select an option:\n";
+    std::cout << "1. Scan for XSS vulnerabilities\n";
+    std::cout << "2. Scan for CSRF vulnerabilities\n";
+    std::cout << "3. Scan for SQL Injection vulnerabilities\n";
+    std::cout << "4. Upload a file\n";
+    std::cout << "5. Exit\n";
+    std::cout << "Enter your choice: ";
+    std::cin >> option;
+    return option;
 }
