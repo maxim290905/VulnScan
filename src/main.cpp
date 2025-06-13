@@ -2,7 +2,7 @@
 #include "menu.h"
 #include "pch.h"
 int main() {
-    print_menu();
+    print_banner();
     input_target_url();
-
+    input_menu_option();
 }
