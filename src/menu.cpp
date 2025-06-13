@@ -57,6 +57,7 @@ void print_banner() {
 
 // Печатает главное меню с баннером и опциями
 void print_start_menu() {
+    clear_console();
     print_banner();
     static const char* inform = R"(
 Welcome to VulnScan!
