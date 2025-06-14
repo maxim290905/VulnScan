@@ -1,3 +1,5 @@
+// VulnScan – program entry
+
 #include "xss.h"
 #include "menu.h"
 #include "sqlinj.h"
