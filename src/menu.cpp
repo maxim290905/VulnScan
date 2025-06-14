@@ -57,20 +57,15 @@ void print_banner() {
     std::cout << banner;
 }
 
-// Печатает главное меню с баннером и опциями
-void print_menu() {
-    clear_console();
-    print_banner();
-
-}
-
 std::string input_target_url() {
+    print_banner();
     std::string url;
     static const char* inform = R"(
 Welcome to VulnScan!
 Enter URL: )";
     std::cout << inform;
     std::cin >> url;
+    print_banner();
     if (url.empty()) {
         std::cerr << "Error: URL cannot be empty." << std::endl;
         return input_target_url(); // Prompt again if the URL is empty
@@ -79,8 +74,18 @@ Enter URL: )";
         std::cerr << "Error: URL must start with 'http://' or 'https://'." << std::endl;
         return input_target_url(); // Prompt again if the URL is invalid
     }
-    print_banner();
     return url;
+}
+
+int unknown_option_handler(int option) {
+    if (std::cin.fail() || !(option >= 0 && option <= 4 || option == 9)) {
+        std::cin.clear(); // Clear the error flag
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Discard invalid input
+        print_banner();
+        std::cerr << "Invalid option. Please try again." << std::endl;
+        return input_menu_option(); // Prompt again for a valid option
+    }
+    return option;
 }
 
 int input_menu_option() {
@@ -94,14 +99,28 @@ int input_menu_option() {
     std::cout << "0. Exit\n";
     std::cout << "Enter your choice: ";
     std::cin >> option;
-    if (std::cin.fail() || !(option >= 0 && option <= 4 || option == 9)) {
-        std::cin.clear(); // Clear the error flag
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Discard invalid input
-        print_banner();
-        std::cerr << "Invalid option. Please try again." << std::endl;
-
-        return input_menu_option(); // Prompt again for a valid option
-    }
     print_banner();
+    option = unknown_option_handler(option); // Check for invalid input
     return option;
 }
+
+void change_url(std::string& url) {
+    url = input_target_url();
+    }
+
+void handle_option(std::string& url)
+{
+    int option = input_menu_option();
+    switch (option)
+    {
+        // case 1: scan_xss(url);         break;
+        // case 2: scan_csrf(url);        break;
+        // case 3: scan_sqli(url);        break;
+        // case 4: upload_file(url);      break;
+        case 9: change_url(url);             break;
+        case 0: std::cout << "Thanks for using VulnScan! Goodbye!\n"; return;
+        default: break;
+    }
+    handle_option(url); // Recursive call to handle the next option
+}
+
