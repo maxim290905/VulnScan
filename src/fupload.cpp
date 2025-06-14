@@ -61,7 +61,7 @@ void upload_file(const std::string& url) {
         }
 
 
-        
+
         // Анализ результатов
         if (res != CURLE_OK) {
             std::cerr << "  Ошибка: " << curl_easy_strerror(res) << "\n";
@@ -109,15 +109,4 @@ void upload_file(const std::string& url) {
         curl_mime_free(mime);
         curl_easy_cleanup(curl);
     }
-}
-
-
-
-int main() {
-    std::string url;
-    std::cout << "Введите URL для загрузки файла: ";
-    std::getline(std::cin, url);
-    
-    upload_file(url);
-    return 0;
 }
