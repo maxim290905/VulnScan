@@ -116,7 +116,7 @@ void handle_option(std::string& url)
         // case 1: scan_xss(url);         break;
         // case 2: scan_csrf(url);        break;
         case 3: scan_sqli(url);        break;
-        // case 4: upload_file(url);      break;
+        case 4: upload_file(url);      break;
         case 9: change_url(url);             break;
         case 0: std::cout << "Thanks for using VulnScan! Goodbye!\n"; return;
         default: break;
