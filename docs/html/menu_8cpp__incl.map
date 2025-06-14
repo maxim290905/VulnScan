@@ -1,0 +1,29 @@
+<map id="src/menu.cpp" name="src/menu.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="306,5,415,31"/>
+<area shape="rect" id="Node000002" href="$menu_8h.html" title="Пользовательский интерфейс и обработка меню VulnScan." alt="" coords="466,79,589,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="389,28,489,71,487,76,387,33"/>
+<area shape="rect" id="Node000004" href="$pch_8h.html" title=" " alt="" coords="275,79,332,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="353,33,323,70,319,66,349,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="390,225,449,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="556,102,581,116,605,134,619,155,619,167,614,179,599,195,582,208,542,226,501,236,463,240,462,234,500,231,540,221,579,204,595,191,609,176,614,166,613,157,601,138,578,120,553,107"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="307,104,314,138,321,158,331,176,354,199,382,217,379,221,351,203,327,179,316,160,308,140,302,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="23,152,103,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="275,104,116,151,114,146,274,99"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="40,225,103,251"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="275,97,210,102,131,112,58,129,31,140,14,154,8,169,14,185,27,201,44,215,40,219,23,205,9,187,3,169,9,150,28,136,56,124,130,107,209,96,274,91"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="207,152,266,177"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="294,106,259,144,255,140,290,103"/>
+<area shape="rect" id="Node000008" href="$xss_8h.html" title=" " alt="" coords="127,152,183,177"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="281,106,193,148,191,144,279,102"/>
+<area shape="rect" id="Node000009" href="$sqlinj_8h.html" title="Модуль для обнаружения уязвимостей SQL&#45;инъекции" alt="" coords="341,152,410,177"/>
+<area shape="poly" id="edge11_Node000004_Node000009" title=" " alt="" coords="317,102,356,140,352,144,313,106"/>
+<area shape="rect" id="Node000010" href="$csrf_8h.html" title="Модуль для обнаружения уязвимостей CSRF." alt="" coords="435,152,492,177"/>
+<area shape="poly" id="edge13_Node000004_Node000010" title=" " alt="" coords="330,102,426,144,424,149,328,106"/>
+<area shape="rect" id="Node000011" href="$fupload_8h.html" title="Модуль для тестирования уязвимостей при загрузке файлов" alt="" coords="517,152,599,177"/>
+<area shape="poly" id="edge15_Node000004_Node000011" title=" " alt="" coords="333,98,504,146,503,151,331,103"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="185,172,196,175,378,223,376,228,195,180,183,177"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="144,179,97,218,94,214,140,175"/>
+<area shape="poly" id="edge12_Node000009_Node000003" title=" " alt="" coords="385,176,407,212,403,215,380,179"/>
+<area shape="poly" id="edge14_Node000010_Node000003" title=" " alt="" coords="458,179,436,215,431,212,454,176"/>
+<area shape="poly" id="edge16_Node000011_Node000003" title=" " alt="" coords="537,180,455,221,453,217,535,175"/>
+</map>

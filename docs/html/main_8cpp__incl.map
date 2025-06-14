@@ -1,0 +1,33 @@
+<map id="src/main.cpp" name="src/main.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="243,5,348,31"/>
+<area shape="rect" id="Node000002" href="$xss_8h.html" title=" " alt="" coords="594,152,650,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,28,585,144,583,149,321,33"/>
+<area shape="rect" id="Node000005" href="$menu_8h.html" title="Пользовательский интерфейс и обработка меню VulnScan." alt="" coords="10,79,80,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="256,33,95,79,93,74,255,28"/>
+<area shape="rect" id="Node000006" href="$sqlinj_8h.html" title="Модуль для обнаружения уязвимостей SQL&#45;инъекции" alt="" coords="450,152,520,177"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="317,29,389,77,464,140,461,144,386,81,314,33"/>
+<area shape="rect" id="Node000007" href="$csrf_8h.html" title="Модуль для обнаружения уязвимостей CSRF." alt="" coords="24,152,82,177"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="278,33,85,147,83,143,275,29"/>
+<area shape="rect" id="Node000008" href="$fupload_8h.html" title="Модуль для тестирования уязвимостей при загрузке файлов" alt="" coords="106,152,189,177"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="285,33,171,144,167,141,282,29"/>
+<area shape="rect" id="Node000009" href="$pch_8h.html" title=" " alt="" coords="318,79,375,104"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="306,29,332,66,328,69,302,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="252,225,310,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="594,175,324,230,323,225,593,169"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="558,225,620,251"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="619,179,603,214,598,212,614,177"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="36,106,23,121,13,140,8,159,14,176,28,187,50,197,110,214,178,224,238,231,237,236,177,230,109,219,48,202,25,192,9,179,3,159,8,138,19,118,32,103"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="453,180,324,225,322,220,451,175"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="83,172,239,221,238,226,81,177"/>
+<area shape="poly" id="edge11_Node000008_Node000003" title=" " alt="" coords="170,175,248,216,246,221,168,180"/>
+<area shape="poly" id="edge17_Node000009_Node000002" title=" " alt="" coords="376,98,582,150,580,155,375,103"/>
+<area shape="poly" id="edge14_Node000009_Node000003" title=" " alt="" coords="362,103,375,118,388,137,395,158,390,178,377,195,361,209,325,227,322,222,358,204,373,192,385,176,389,158,383,139,371,121,358,106"/>
+<area shape="poly" id="edge15_Node000009_Node000004" title=" " alt="" coords="376,93,451,110,494,127,533,150,561,179,581,211,576,214,557,183,530,154,492,131,450,115,375,99"/>
+<area shape="poly" id="edge18_Node000009_Node000006" title=" " alt="" coords="370,102,451,143,449,148,367,106"/>
+<area shape="poly" id="edge19_Node000009_Node000007" title=" " alt="" coords="318,102,96,155,94,149,317,96"/>
+<area shape="poly" id="edge20_Node000009_Node000008" title=" " alt="" coords="318,105,193,150,191,145,317,100"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="213,152,293,177"/>
+<area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="333,106,281,146,277,141,330,102"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="317,152,376,177"/>
+<area shape="poly" id="edge16_Node000009_Node000011" title=" " alt="" coords="349,104,349,138,344,138,344,104"/>
+</map>
