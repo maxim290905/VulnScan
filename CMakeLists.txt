@@ -4,7 +4,7 @@ project(vuln_scan)
 
 set(CMAKE_CXX_STANDARD 17)
 
-
+find_package(Boost REQUIRED COMPONENTS system beast url)
 
 add_executable(vuln_scan src/main.cpp
         src/include/xss.h
@@ -19,4 +19,5 @@ add_executable(vuln_scan src/main.cpp
         src/include/menu.h
 )
 target_precompile_headers(vuln_scan PRIVATE src/include/pch.h)
+find_package(OpenSSL REQUIRED)
 include_directories(${CMAKE_SOURCE_DIR}/src/include)
