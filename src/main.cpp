@@ -8,5 +8,6 @@
 int main() {
     std::string target_url = input_target_url();
     handle_option(target_url);
+
     return 0;
 }
