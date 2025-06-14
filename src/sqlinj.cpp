@@ -1,4 +1,4 @@
-// sqlinj.cpp
+
 #include "sqlinj.h"
 
 #include <boost/url.hpp>
@@ -19,9 +19,7 @@ namespace urls  = boost::urls;
 namespace ssl   = net::ssl;
 using tcp       = net::ip::tcp;
 
-/* ------------------------------------------------------------------ */
-/*                         Helper – HTTP GET                          */
-/* ------------------------------------------------------------------ */
+
 static std::string sendRequest(const std::string& host,
                                const std::string& target,
                                const std::string& port,
@@ -90,9 +88,7 @@ static std::string sendRequest(const std::string& host,
     }
 }
 
-/* ------------------------------------------------------------------ */
-/*                  Helper – regex-based error detector               */
-/* ------------------------------------------------------------------ */
+
 static bool containsSQLError(const std::string& response)
 {
     static const std::vector<std::string> patterns = {
@@ -109,9 +105,7 @@ static bool containsSQLError(const std::string& response)
     return false;
 }
 
-/* ------------------------------------------------------------------ */
-/*                            scan_sqli()                             */
-/* ------------------------------------------------------------------ */
+
 void scan_sqli(const std::string& urlStr)
 {
     /* ---------- ❶ Parse the URL ---------- */
