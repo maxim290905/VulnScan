@@ -1,5 +1,5 @@
-//
-// Created by olegek on 6/13/25.
-//
+// XSS scanning module (stub)
 
 #include "xss.h"
+
+//

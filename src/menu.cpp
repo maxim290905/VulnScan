@@ -2,12 +2,12 @@
 #include "include/menu.h"
 #include "pch.h"
 
-// Очищает экран консоли (с помощью полной перезагрузки терминала)
+
 void clear_console() {
     std::cout << "\033c" << std::flush;
 }
 
-// Печатает баннер с ASCII-арт и информацией о проекте
+
 void print_banner() {
     clear_console();
     static const char* banner = R"(
@@ -57,6 +57,7 @@ void print_banner() {
     std::cout << banner;
 }
 
+
 std::string input_target_url() {
     print_banner();
     std::string url;
@@ -77,6 +78,7 @@ Enter URL: )";
     return url;
 }
 
+
 int unknown_option_handler(int option) {
     if (std::cin.fail() || !(option >= 0 && option <= 4 || option == 9)) {
         std::cin.clear(); // Clear the error flag
@@ -87,6 +89,7 @@ int unknown_option_handler(int option) {
     }
     return option;
 }
+
 
 int input_menu_option() {
     int option;
@@ -104,9 +107,11 @@ int input_menu_option() {
     return option;
 }
 
+
 void change_url(std::string& url) {
     url = input_target_url();
     }
+
 
 void handle_option(std::string& url)
 {
@@ -123,4 +128,3 @@ void handle_option(std::string& url)
     }
     handle_option(url); // Recursive call to handle the next option
 }
-

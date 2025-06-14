@@ -1,12 +1,12 @@
+
+
 #include <iostream>
 #include <string>
 #include <vector>
-#include <algorithm>        // std::transform
+#include <algorithm>
 #include <curl/curl.h>
 
-/* ------------------------------------------------------------ */
-/*           Helpers                                            */
-/* ------------------------------------------------------------ */
+
 static size_t WriteCallback(void* contents, size_t size,
                             size_t nmemb, std::string* responseBody)
 {
@@ -44,7 +44,7 @@ static bool isBlocked(const std::string& body)
     return false;
 }
 
-/* ------------------------------------------------------------ */
+
 void upload_file(const std::string& url)
 {
     const std::vector<std::string> payloads = {
