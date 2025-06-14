@@ -5,5 +5,10 @@
 #include <string>
 #include <vector>
 #include <limits>
+#include "xss.h"
+#include "sqlinj.h"
+#include "csrf.h"
+#include "fupload.h"
+
 
 #endif //PCH_H
