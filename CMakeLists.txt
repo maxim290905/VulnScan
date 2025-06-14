@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 find_package(Boost 1.83 REQUIRED COMPONENTS system regex url)
 find_package(OpenSSL REQUIRED)
-
+find_package(CURL REQUIRED)
  # -----------------------------------------------------------
 
 
@@ -41,4 +41,5 @@ target_link_libraries(vuln_scan
         Boost::regex
         OpenSSL::SSL
         OpenSSL::Crypto
+        CURL::libcurl
 )
